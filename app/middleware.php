@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+use Slim\App;
+
+/*
+ * Middleware settings
+ */
+return function (App $app) {
+    $settings = $app->getContainer()->get('settings');
+    $app->addErrorMiddleware(
+        $settings['displayErrorDetails'],
+        $settings['logErrors'],
+        $settings['logErrorDetails']
+    );
+};
