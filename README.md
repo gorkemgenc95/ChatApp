@@ -18,7 +18,7 @@ Replace `[my-app-name]` with the desired directory name for your new application
 * Point your virtual host document root to your new application's `public/` directory.
 * Ensure `logs/` is web writable.
 
-###About ChatApp
+### About ChatApp
 
 ChatApp (sounds like shut up, but it is a chat application, what a twist!) is a chat application that people can simply register with a nickname, an email and a password to connect others.
 
